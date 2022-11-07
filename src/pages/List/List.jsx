@@ -1,10 +1,11 @@
 import React from "react";
 import { useNftListQuery } from "src/hooks/queries";
+import Spinner from "src/components/Spinner";
 
 const List = () => {
   const { isLoading, data } = useNftListQuery();
 
-  if (isLoading) return <div>Loading....</div>;
+  if (isLoading) return <Spinner text="Fetching nft list" />;
 
   if (!data) return <div>No data.....</div>;
 
