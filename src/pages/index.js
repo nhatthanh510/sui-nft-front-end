@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { QueryClient, dehydrate } from 'react-query';
-import { useGetDummyData } from '@hooks/queries/useGetDummy';
+import { QueryClient, dehydrate } from '@tanstack/react-query';
+import { getDummyData } from '@services/frontend';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
 export const getServerSideProps = async () => {
   const queryClient = new QueryClient();
 
-  await queryClient.prefetchQuery(useGetDummyData);
+  await queryClient.prefetchQuery(['post'], getDummyData);
 
   return {
     props: {

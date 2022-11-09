@@ -1,7 +1,7 @@
 import { getDummyData } from '@services/frontend';
-import { useQuery } from 'react-query';
+import { useQuery } from '@tanstack/react-query';
 
 export const useGetDummyData = () => {
-  const result = useQuery('post', getDummyData);
+  const result = useQuery(['post', '1'], getDummyData);
   return result;
 };
