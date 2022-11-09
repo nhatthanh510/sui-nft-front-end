@@ -1,24 +1,18 @@
-import Image from 'next/image';
-import { QueryClient, dehydrate } from '@tanstack/react-query';
-import { getDummyData } from '@services/frontend';
+// import { QueryClient, dehydrate } from '@tanstack/react-query';
+// import { getDummyData } from '@services/frontend';
 
 export default function Home() {
-  return (
-    <div className="text-4xl text-red-500">
-      <Image src="/vercel.svg" width={100} height={500} alt="logo" />
-      asd
-    </div>
-  );
+  return <div className=""></div>;
 }
 
-export const getServerSideProps = async () => {
-  const queryClient = new QueryClient();
+// export const getServerSideProps = async () => {
+//   const queryClient = new QueryClient();
 
-  await queryClient.prefetchQuery(['post'], getDummyData);
+//   await queryClient.prefetchQuery(['post'], getDummyData);
 
-  return {
-    props: {
-      dehydratedState: dehydrate(queryClient),
-    },
-  };
-};
+//   return {
+//     props: {
+//       dehydratedState: dehydrate(queryClient),
+//     },
+//   };
+// };

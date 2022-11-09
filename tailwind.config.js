@@ -2,6 +2,12 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   theme: {
+    textColor: (theme) => ({
+      ...theme('colors'),
+      main: '#fff',
+      secondary: '#F5D26D',
+      gray: '#9e9e9e',
+    }),
     extend: {},
   },
   plugins: [require('daisyui'), require('prettier-plugin-tailwindcss')],
