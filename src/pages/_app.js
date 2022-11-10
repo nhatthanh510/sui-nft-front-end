@@ -25,16 +25,14 @@ function MyApp({ Component, pageProps }) {
       <ReactQueryDevtools initialIsOpen={false} />
       <Hydrate state={pageProps.dehydratedState}>
         <Layout>
-          <>
-            <NextNProgress color="#29D" startPosition={0.3} height={5} showOnShallow={false} />
-            <Component {...pageProps} />
-            <ToastContainer
-              position="bottom-right"
-              hideProgressBar={true}
-              autoClose={3000}
-              closeOnClick
-            />
-          </>
+          <NextNProgress color="#29D" startPosition={0.3} height={5} showOnShallow={false} />
+          <Component {...pageProps} />
+          <ToastContainer
+            position="bottom-right"
+            hideProgressBar={true}
+            autoClose={3000}
+            closeOnClick
+          />
         </Layout>
       </Hydrate>
     </QueryClientProvider>

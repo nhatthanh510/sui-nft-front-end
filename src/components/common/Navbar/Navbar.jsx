@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { BsSearch } from 'react-icons/bs';
 import { BiBell } from 'react-icons/bi';
+import useSuiWallet from '@hooks/useSuiWallet';
 
 const SearchBar = () => {
   return (
@@ -16,6 +17,9 @@ const SearchBar = () => {
 };
 
 const Navigation = () => {
+  const { connect, account, isActive, suiWallet } = useSuiWallet();
+  console.log('account', account);
+  console.log('suiWallet', suiWallet);
   return (
     <div className="flex flex-row gap-10">
       <ul className="flex flex-row gap-8 pt-1.5">
@@ -29,7 +33,13 @@ const Navigation = () => {
       <div className="relative flex flex-row gap-7 pl-3">
         <span className="absolute top-2.5 left-0 block h-4 w-0.5 bg-white opacity-60" />
         <BiBell className="mt-1.5 text-2xl" />
-        <button className="btn-sm btn">Connect Wallet</button>
+        {!isActive ? (
+          <button className="btn-sm btn" onClick={connect}>
+            Connect Wallet
+          </button>
+        ) : (
+          <span>{account}</span>
+        )}
       </div>
     </div>
   );
