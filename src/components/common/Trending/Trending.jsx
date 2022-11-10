@@ -12,19 +12,26 @@ export default function Trending() {
       </h3>
       <button className="btn mx-auto mt-6 block w-full max-w-[247px]">Start Trading</button>
       <h2 className="mt-8 text-center text-[40px] font-bold capitalize">Trending Collections</h2>
-      <div className="inline-block rounded-xl border border-white">
-        <Link href="">
-          <Image
-            src="/assets/images/trending-collection.jpg"
-            width={331}
-            height={418}
-            className="rounded-xl"
-            alt=""
-          />
-        </Link>
-        <h3 className="p-4 text-[18px] font-bold">
-          <Link href="">PEC Friends #1775</Link>
-        </h3>
+      <div
+        className="bg-contain bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('./assets/images/discover.png')",
+        }}
+      >
+        <div className="inline-block rounded-xl border border-white">
+          <Link href="">
+            <Image
+              src="/assets/images/trending-collection.jpg"
+              width={331}
+              height={418}
+              className="rounded-xl"
+              alt=""
+            />
+          </Link>
+          <h3 className="p-4 text-[18px] font-bold">
+            <Link href="">PEC Friends #1775</Link>
+          </h3>
+        </div>
       </div>
     </div>
   );
