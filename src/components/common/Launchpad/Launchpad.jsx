@@ -6,7 +6,7 @@ export default function Launchpad() {
   return (
     <div className="container mx-auto mt-48 flex flex-row gap-28">
       <div className="relative shrink-0 grow-0 pt-11">
-        <div className=" absolute top-0 left-8 w-full rounded-xl bg-white pt-[100%]" />
+        <div className=" bg-gradient absolute top-0 left-8 w-full rounded-xl pt-[100%]" />
         <Image
           src="/assets/images/launchpad.jpg"
           width={633}
@@ -18,9 +18,9 @@ export default function Launchpad() {
       <div className="w-full">
         <h2 className="text-[40px] font-bold">Launchpad</h2>
         <Tabs className="mt-14">
-          <TabList className="flex flex-row gap-12 text-[18px] font-medium text-gray">
-            <Tab className="cursor-pointer">Whitelist</Tab>
-            <Tab className="cursor-pointer">Public</Tab>
+          <TabList className="tab-list">
+            <Tab className="tab-title">Whitelist</Tab>
+            <Tab className="tab-title">Public</Tab>
           </TabList>
           <TabPanel>
             <h2 className="mt-8 text-2xl font-bold">F1 Dog</h2>
@@ -42,7 +42,7 @@ export default function Launchpad() {
               digitize the traditional greyhound racing industry. Players can own, train dogs,
               breed, use them to participate in races and earn money easily.
             </p>
-            <button className="btn mt-12">Go to launchpad</button>
+            <button className="btn mt-12 min-w-[247px]">Go to launchpad</button>
           </TabPanel>
           <TabPanel>
             <h2>Any content 2</h2>

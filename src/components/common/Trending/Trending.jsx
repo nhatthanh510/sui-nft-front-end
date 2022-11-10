@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Trending() {
   return (
-    <div className="container mx-auto">
+    <div className="mt-18 container mx-auto">
       <h1 className="mt-14 text-center text-6xl font-bold uppercase">DISCOVER RARE</h1>
       <h3 className="mt-4 text-center text-base font-medium">
         Explore the most outstanding NTFs in all topics of life. Buy NFTs <br />
@@ -22,8 +22,10 @@ export default function Trending() {
           <Link href="">
             <Image
               src="/assets/images/trending-collection.jpg"
-              width={331}
-              height={418}
+              // width={331}
+              // height={418}
+              width={262}
+              height={330}
               className="rounded-xl"
               alt=""
             />

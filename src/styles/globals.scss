@@ -22,3 +22,37 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.btn {
+  @apply rounded-full px-6 capitalize text-black transition-all duration-200 hover:scale-105;
+  background: linear-gradient(258.65deg, #9be3ff 15.72%, #f4b1ea 47.45%, #f8d46b 84.17%);
+}
+
+.bg-gradient {
+  background: linear-gradient(258.65deg, #9be3ff 15.72%, #f4b1ea 47.45%, #f8d46b 84.17%);
+}
+
+.text-gradient {
+  background: linear-gradient(258.65deg, #9be3ff 15.72%, #f4b1ea 47.45%, #f8d46b 84.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tab-list {
+  @apply flex flex-row gap-12 text-[18px] font-medium text-gray;
+  .tab-title {
+    @apply cursor-pointer pb-3;
+    &.react-tabs__tab--selected {
+      @apply relative;
+      @extend .text-gradient;
+      &:before {
+        @apply absolute bottom-0 left-0 rounded-full;
+        background: linear-gradient(258.65deg, #9be3ff 15.72%, #f4b1ea 47.45%, #f8d46b 84.17%);
+        content: '';
+        width: 53px;
+        height: 5px;
+      }
+    }
+  }
+}
