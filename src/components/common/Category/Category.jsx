@@ -1,0 +1,16 @@
+import SectionTitle from '@components/common/SectionTitle/SectionTitle';
+import CategoryItem from './CategoryItem';
+
+export default function Category() {
+  return (
+    <div className="container mx-auto mt-32">
+      <SectionTitle title="Browse By Category" des="Explore the new creative economy" />
+      <div className="grid grid-cols-4 gap-7">
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
+      </div>
+    </div>
+  );
+}
