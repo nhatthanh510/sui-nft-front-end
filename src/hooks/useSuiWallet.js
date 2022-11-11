@@ -38,7 +38,9 @@ const useSuiWallet = () => {
     try {
       await wallet.requestPermissions();
       setIsActive(true);
-    } catch (error) {}
+    } catch (error) {
+      console.log('connect error', error);
+    }
   }, [wallet]);
 
   useEffect(() => {
