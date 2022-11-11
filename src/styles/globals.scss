@@ -24,9 +24,26 @@ a {
   box-sizing: border-box;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .btn {
-  @apply rounded-full px-6 capitalize text-black transition-all duration-200 hover:scale-105;
+  @apply rounded-full px-6 capitalize text-black;
   background: linear-gradient(258.65deg, #9be3ff 15.72%, #f4b1ea 47.45%, #f8d46b 84.17%);
+  &:hover {
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    @apply scale-105;
+  }
 }
 
 .bg-gradient {
