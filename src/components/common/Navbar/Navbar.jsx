@@ -27,7 +27,7 @@ const Navigation = () => {
           <Link href="explore">Explore</Link>
         </li>
         <li className="hover:text">
-          <Link href="explore">Launchpad</Link>
+          <Link href="launchpad">Launchpad</Link>
         </li>
       </ul>
       <div className="relative flex flex-row gap-7 pl-3">
