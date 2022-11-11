@@ -55,15 +55,17 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  &:hover {
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+  }
 }
 
 .tab-list {
   @apply flex flex-row gap-12 text-[18px] font-medium text-gray;
   .tab-title {
     @apply cursor-pointer pb-3 outline-none;
-    &:hover {
-      @extend .text-gradient;
-    }
+    &:hover,
     &.react-tabs__tab--selected {
       @apply relative;
       @extend .text-gradient;
@@ -73,6 +75,12 @@ a {
         background: linear-gradient(258.65deg, #9be3ff 15.72%, #f4b1ea 47.45%, #f8d46b 84.17%);
         content: '';
         height: 5px;
+      }
+      &:hover {
+        &:before {
+          background-size: 200% 100%;
+          animation: gradient 5s ease infinite;
+        }
       }
     }
   }
