@@ -24,15 +24,21 @@ const Navigation = () => {
     <div className="flex flex-row gap-10">
       <ul className="flex flex-row gap-8 pt-1.5">
         <li className="hover:text">
-          <Link href="explore">Explore</Link>
+          <Link href="explore" className="gradient-text">
+            Explore
+          </Link>
         </li>
         <li className="hover:text">
-          <Link href="launchpad">Launchpad</Link>
+          <Link href="launchpad" className="gradient-text">
+            Launchpad
+          </Link>
         </li>
       </ul>
       <div className="relative flex flex-row gap-7 pl-3">
         <span className="absolute top-2.5 left-0 block h-4 w-0.5 bg-white opacity-60" />
-        <BiBell className="mt-1.5 text-2xl" />
+        <Link href="">
+          <BiBell className="mt-1.5 text-2xl" />
+        </Link>
         {!isActive ? (
           <button className="btn-sm btn" onClick={connect}>
             Connect Wallet

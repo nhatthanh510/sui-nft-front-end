@@ -88,7 +88,9 @@ const FooterCol = () => {
           <li className="pb-2 capitalize">{footerLink.title}</li>
           {footerLink.links.map((link) => (
             <li key={link.link} className="mt-4 text-sm capitalize opacity-70">
-              <Link href={link.link}>{link.text}</Link>
+              <Link href={link.link} className=" gradient-text">
+                {link.text}
+              </Link>
             </li>
           ))}
         </ul>
@@ -103,7 +105,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-row items-center justify-between">
         <ul className="flex flex-col gap-5">
           <li>
-            <Link href="" className="flex flex-row items-center gap-4">
+            <Link href="" className="gradient-text flex flex-row items-center gap-4">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#5865f2]">
                 <FaDiscord className="text-base text-main" />
               </span>
@@ -111,7 +113,7 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="" className="flex flex-row items-center gap-4">
+            <Link href="" className="gradient-text flex flex-row items-center gap-4">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#2197d4]">
                 <FaTelegramPlane className="text-base text-main" />
               </span>
@@ -119,7 +121,7 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="" className="flex flex-row items-center gap-4">
+            <Link href="" className="gradient-text flex flex-row items-center gap-4">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#5a99ec]">
                 <AiOutlineTwitter className="text-base text-main" />
               </span>

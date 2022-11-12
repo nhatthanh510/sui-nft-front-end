@@ -31,7 +31,9 @@ export default function Trending() {
             />
           </Link>
           <h3 className="p-4 text-[18px] font-bold">
-            <Link href="">PEC Friends #1775</Link>
+            <Link href="" className="gradient-text">
+              PEC Friends #1775
+            </Link>
           </h3>
         </div>
       </div>

@@ -15,9 +15,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  &:hover {
-    @extend .text-gradient;
-  }
 }
 
 * {
@@ -26,23 +23,53 @@ a {
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
     background-position: 100% 50%;
   }
-  100% {
+  50% {
     background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-text {
+  &:hover {
+    @extend .text-gradient;
   }
 }
 
 .btn {
-  @apply rounded-full px-6 capitalize text-black;
+  @apply rounded-full px-6 capitalize text-black transition-transform duration-300 ease-out;
   background: linear-gradient(258.65deg, #9be3ff 15.72%, #f4b1ea 47.45%, #f8d46b 84.17%);
+  transform: scale(1) !important;
   &:hover {
     background-size: 200% 100%;
-    animation: gradient 5s ease infinite;
-    @apply scale-105;
+    animation: gradient 3s ease infinite;
+    transform: scale(1.05) !important;
+  }
+}
+
+.gradient-box {
+  $border: 1px;
+  background: #030303;
+  background-clip: padding-box; /* !importanté */
+  border: $border solid #fff;
+  &:hover {
+    border: solid $border transparent; /* !importanté */
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -$border;
+      @extend .bg-gradient;
+      background-size: 200% 100%;
+      animation: gradient 5s ease infinite;
+    }
   }
 }
 
@@ -65,19 +92,23 @@ a {
   @apply flex flex-row gap-12 text-[18px] font-medium text-gray;
   .tab-title {
     @apply cursor-pointer pb-3 outline-none;
+    &:before {
+      @apply absolute bottom-0 left-0 w-0 max-w-[53px]
+      rounded-full transition-all duration-200 ease-out;
+      @extend .bg-gradient;
+      content: '';
+      height: 5px;
+    }
     &:hover,
     &.react-tabs__tab--selected {
       @apply relative;
       @extend .text-gradient;
       &:before {
-        @apply absolute bottom-0 left-0 w-full max-w-[53px]
-        rounded-full;
-        background: linear-gradient(258.65deg, #9be3ff 15.72%, #f4b1ea 47.45%, #f8d46b 84.17%);
-        content: '';
-        height: 5px;
+        @apply w-full;
       }
       &:hover {
         &:before {
+          @apply w-full;
           background-size: 200% 100%;
           animation: gradient 5s ease infinite;
         }

@@ -14,7 +14,9 @@ export default function CategoryItem() {
         />
       </Link>
       <h3 className="mt-4 text-[18px] font-bold">
-        <Link href="">Art</Link>
+        <Link href="" className="gradient-text">
+          Art
+        </Link>
       </h3>
       <p className="text-base text-gray">2 Collections</p>
     </div>

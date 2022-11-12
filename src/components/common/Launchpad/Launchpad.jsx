@@ -30,10 +30,14 @@ export default function Launchpad() {
               </Link>
               <div>
                 <h3 className="text-[18px] font-bold capitalize">
-                  <Link href="">Puke 2 Earn</Link>
+                  <Link href="" className=" gradient-text">
+                    Puke 2 Earn
+                  </Link>
                 </h3>
                 <h4 className="mt-1 text-base capitalize text-gray">
-                  <Link href="">Creator</Link>
+                  <Link href="" className="gradient-text">
+                    Creator
+                  </Link>
                 </h4>
               </div>
             </div>
