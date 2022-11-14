@@ -53,23 +53,21 @@ a {
 .gradient-box {
   $border: 1px;
   background: #030303;
-  background-clip: padding-box; /* !importanté */
+  background-clip: padding-box;
   border: $border solid #fff;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border;
+    @extend .bg-gradient;
+  }
   &:hover {
-    border: solid $border transparent; /* !importanté */
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-      margin: -$border;
-      @extend .bg-gradient;
-      background-size: 200% 100%;
-      animation: gradient 5s ease infinite;
-    }
+    border: solid $border transparent;
   }
 }
 

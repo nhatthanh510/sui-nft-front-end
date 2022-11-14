@@ -6,12 +6,12 @@ export default function Launchpad() {
   return (
     <div className="container mx-auto mt-48 flex flex-row gap-28">
       <div className="relative shrink-0 grow-0 pt-11">
-        <div className=" bg-gradient absolute top-0 left-8 w-full rounded-xl pt-[100%]" />
+        <div className=" bg-gradient absolute top-0 left-8 w-full rounded-2xl pt-[100%]" />
         <Image
           src="/assets/images/launchpad.jpg"
           width={633}
           height={633}
-          className="relative z-10 rounded-xl"
+          className="relative z-10 rounded-2xl"
           alt=""
         />
       </div>

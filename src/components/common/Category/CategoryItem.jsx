@@ -10,7 +10,7 @@ export default function CategoryItem() {
           width={272}
           height={178}
           alt=""
-          className="w-full rounded-2xl"
+          className="w-full rounded-3xl"
         />
       </Link>
       <h3 className="mt-4 text-[18px] font-bold">
