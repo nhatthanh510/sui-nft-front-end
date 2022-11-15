@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
       <Background />
       <div className="relative z-10">
         <Navbar />
-        <div>{children}</div>
+        <div className="container mx-auto max-w-[1169px]">{children}</div>
         <Footer />
       </div>
     </>

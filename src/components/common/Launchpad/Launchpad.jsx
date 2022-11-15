@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 export default function Launchpad() {
   return (
-    <div className="container mx-auto mt-48 flex flex-row gap-28">
+    <div className="mt-48 flex flex-row gap-28">
       <div className="relative shrink-0 grow-0 pt-11">
         <div className=" bg-gradient absolute top-0 left-8 w-full rounded-2xl pt-[100%]" />
         <Image

@@ -3,6 +3,7 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { useState } from 'react';
 import NextNProgress from 'nextjs-progressbar';
 import '../styles/globals.scss';
+import '../styles/slick.scss';
 import { ToastContainer } from 'react-toastify';
 import Layout from '@components/common/Layout';
 

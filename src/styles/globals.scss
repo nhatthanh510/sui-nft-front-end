@@ -108,9 +108,57 @@ a {
         &:before {
           @apply w-full;
           background-size: 200% 100%;
-          animation: gradient 5s ease infinite;
+          animation: gradient 5s infinite;
         }
       }
+    }
+  }
+}
+
+.trending {
+  .slick-list {
+    @apply mx-auto mt-5 max-w-5xl;
+  }
+  .slick-slide {
+    @apply scale-75 text-center transition-transform duration-300 ease-out;
+    &.slick-current {
+      @apply scale-100;
+    }
+    img {
+      width: 100% !important;
+    }
+  }
+  .slick-arrow {
+    @apply absolute top-[60px] z-10 h-[350px] w-[250px] text-[0];
+    &.slick-next {
+      @apply right-[320px];
+    }
+    &.slick-prev {
+      @apply left-[320px];
+    }
+  }
+  .slick-dots {
+    @apply absolute left-1/2  top-full z-50 mt-4 -translate-x-1/2;
+    li {
+      @apply mx-1.5 inline-block h-[10px] w-[10px] overflow-hidden rounded-full bg-[#7a7a7a] text-[#7a7a7a] transition-all duration-200 ease-out;
+      &.slick-active {
+        @apply w-[85px] bg-[#d9d9d9] text-[#d9d9d9];
+      }
+    }
+  }
+}
+
+.collections {
+  .slick-track {
+    margin: 0 -15px;
+  }
+  .slick-arrow {
+    @apply absolute top-1/2 -translate-y-1/2;
+    &.slick-prev {
+      @apply left-0 -ml-20;
+    }
+    &.slick-next {
+      @apply right-0 -mr-6;
     }
   }
 }

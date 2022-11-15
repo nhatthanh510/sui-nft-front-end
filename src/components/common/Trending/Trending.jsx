@@ -1,10 +1,21 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
+import Slider from 'react-slick';
+import TrendingItem from './TrendingItem';
 
 export default function Trending() {
+  const settings = {
+    className: 'center',
+    centerMode: true,
+    infinite: true,
+    arrows: false,
+    dots: true,
+    centerPadding: '350px',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 300,
+  };
   return (
-    <div className="mt-18 container mx-auto">
+    <div className="mt-18">
       <h1 className="mt-14 text-center text-6xl font-bold uppercase">DISCOVER RARE</h1>
       <h3 className="mt-4 text-center text-base font-medium">
         Explore the most outstanding NTFs in all topics of life. Buy NFTs <br />
@@ -18,24 +29,11 @@ export default function Trending() {
           backgroundImage: "url('./assets/images/discover.png')",
         }}
       >
-        <div className="inline-block rounded-xl border border-white">
-          <Link href="">
-            <Image
-              src="/assets/images/trending-collection.jpg"
-              // width={331}
-              // height={418}
-              width={262}
-              height={330}
-              className="rounded-xl"
-              alt=""
-            />
-          </Link>
-          <h3 className="p-4 text-[18px] font-bold">
-            <Link href="" className="gradient-text">
-              PEC Friends #1775
-            </Link>
-          </h3>
-        </div>
+        <Slider {...settings} className="trending">
+          <TrendingItem />
+          <TrendingItem />
+          <TrendingItem />
+        </Slider>
       </div>
     </div>
   );
