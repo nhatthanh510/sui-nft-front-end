@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function CollectionItem() {
   return (
-    <div className="mx-[15px]">
+    <div className="collection">
       <Link href="" className="group relative">
         <div className="relative z-10 grid grid-cols-2 border border-white p-9">
           <Image

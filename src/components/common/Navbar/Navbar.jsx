@@ -11,7 +11,9 @@ const SearchBar = () => {
         placeholder="Search NFTs, Collections"
         className="relative z-10 mt-0.5 w-full rounded-full border-none bg-transparent px-4 align-top text-sm  outline-none"
       />
-      <BsSearch className="absolute top-1.5 right-3 z-0 text-xl text-white" />
+      <button className="absolute top-1.5 right-3 z-20 text-xl text-white">
+        <BsSearch />
+      </button>
     </span>
   );
 };

@@ -149,6 +149,9 @@ a {
 }
 
 .collections {
+  .collection {
+    @apply mx-[15px];
+  }
   .slick-track {
     margin: 0 -15px;
   }
@@ -159,6 +162,37 @@ a {
     }
     &.slick-next {
       @apply right-0 -mr-6;
+    }
+  }
+}
+
+.category-filter {
+  @apply mt-32 flex flex-row gap-16 text-[18px] font-medium;
+  li {
+    a {
+      @apply cursor-pointer pb-3 outline-none;
+      &:before {
+        @apply absolute bottom-0 left-0 w-0 max-w-[53px]
+        rounded-full transition-all duration-200 ease-out;
+        @extend .bg-gradient;
+        content: '';
+        height: 5px;
+      }
+      &:hover,
+      &.active {
+        @apply relative;
+        @extend .text-gradient;
+        &:before {
+          @apply w-full;
+        }
+        &:hover {
+          &:before {
+            @apply w-full;
+            background-size: 200% 100%;
+            animation: gradient 5s infinite;
+          }
+        }
+      }
     }
   }
 }
