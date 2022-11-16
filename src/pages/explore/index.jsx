@@ -1,5 +1,5 @@
 import ExplorePage from '@components/ExplorePage';
 
-export default function Home() {
+export default function Explore() {
   return <ExplorePage />;
 }

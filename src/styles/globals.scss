@@ -39,6 +39,21 @@ a {
   }
 }
 
+.scrollbar {
+  &::-webkit-scrollbar {
+    height: 13px;
+  }
+
+  &::-webkit-scrollbar-track {
+    @apply rounded-full bg-[#373737];
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @extend .bg-gradient;
+    @apply rounded-full;
+  }
+}
+
 .btn {
   @apply rounded-full px-6 capitalize text-black transition-transform duration-300 ease-out;
   background: linear-gradient(258.65deg, #9be3ff 15.72%, #f4b1ea 47.45%, #f8d46b 84.17%);
@@ -149,20 +164,11 @@ a {
 }
 
 .collections {
+  @apply whitespace-nowrap pb-10;
+  @extend .scrollbar;
   .collection {
-    @apply mx-[15px];
-  }
-  .slick-track {
-    margin: 0 -15px;
-  }
-  .slick-arrow {
-    @apply absolute top-1/2 -translate-y-1/2;
-    &.slick-prev {
-      @apply left-0 -ml-20;
-    }
-    &.slick-next {
-      @apply right-0 -mr-6;
-    }
+    @apply mr-8 inline-block last:mr-0;
+    width: calc(33.33% - 22px);
   }
 }
 
