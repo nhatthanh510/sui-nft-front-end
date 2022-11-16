@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { BsSearch } from 'react-icons/bs';
 import { BiBell } from 'react-icons/bi';
 import useSuiWallet from '@hooks/useSuiWallet';
+import { formatAddress } from '@services/frontend';
 
 const SearchBar = () => {
   return (
@@ -46,7 +47,7 @@ const Navigation = () => {
             Connect Wallet
           </button>
         ) : (
-          <span>{account}</span>
+          <span className="text-sm leading-9">{formatAddress(account)}</span>
         )}
       </div>
     </div>
