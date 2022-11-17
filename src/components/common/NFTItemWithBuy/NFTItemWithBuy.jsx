@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
-import CountdownItem from './CountdownItem';
+import { CountdownItem } from '@components/common';
 
-export default function UpcomingItem() {
+export default function NFTItemWithBuy() {
   return (
     <div className="inline-block rounded-xl border border-[#9E8AA1]">
       <Link href="">
@@ -16,7 +15,7 @@ export default function UpcomingItem() {
       </Link>
       <div className="p-4">
         <h2 className="text-base font-bold text-white">
-          <Link href="">PEC Friends #1775</Link>
+          <Link href="">PEC Friends #1775 yamero</Link>
         </h2>
         <p className="mt-2 font-medium text-[#9e9e9e]">Price</p>
         <p className="mt-2">

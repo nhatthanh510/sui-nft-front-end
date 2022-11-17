@@ -228,3 +228,16 @@ a {
     }
   }
 }
+
+.collection-social {
+  @apply inline-block h-8 w-8 rounded-full bg-[#2d2d2d] text-center;
+  svg {
+    @apply mx-auto mt-1.5 align-top;
+  }
+  &:hover {
+    @extend .bg-gradient;
+    background-size: 200% 100%;
+    animation: gradient 5s infinite;
+    @apply text-black;
+  }
+}
