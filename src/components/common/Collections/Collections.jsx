@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTitle from '@components/common/SectionTitle/SectionTitle';
+import { SectionTitle } from '@components/common';
 import CollectionItem from './CollectionItem';
 
 export default function Collections() {

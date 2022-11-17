@@ -10,4 +10,5 @@ export { default as Trending } from './Trending';
 export { default as SearchItem } from './SearchItem';
 export { default as CategoryFilter } from './CategoryFilter';
 export { default as Upcoming } from './Upcoming';
+export { default as SectionTitle } from './SectionTitle';
 export { default as Pagination } from './Pagination';

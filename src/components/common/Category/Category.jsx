@@ -1,4 +1,4 @@
-import SectionTitle from '@components/common/SectionTitle/SectionTitle';
+import { SectionTitle } from '@components/common/';
 import CategoryItem from './CategoryItem';
 
 export default function Category() {

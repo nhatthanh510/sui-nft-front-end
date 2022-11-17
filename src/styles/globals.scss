@@ -206,7 +206,7 @@ a {
 .pagination {
   @apply float-right mt-10 flex flex-row items-center gap-4;
   li {
-    @apply font-bold;
+    @apply font-bold outline-none;
     &:hover,
     &.selected {
       @extend .text-gradient;
@@ -215,6 +215,15 @@ a {
     &.next {
       &:hover {
         @apply scale-105 transition-all duration-300 ease-out;
+      }
+      &.disabled {
+        @apply grayscale;
+        a {
+          @apply cursor-auto;
+        }
+        &:hover {
+          @apply scale-100;
+        }
       }
     }
   }
