@@ -1739,7 +1739,7 @@
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.7.1.tgz"
   "version" "2.7.1"
 
-"prop-types@^15.5.0", "prop-types@^15.8.1":
+"prop-types@^15", "prop-types@^15.5.0", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -1786,6 +1786,13 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
+"react-paginate@^8.1.4":
+  "integrity" "sha512-c3rxjcTEqeDQa6LqXifxLeFguY2qy2CHGRphVjHLFFMGfIHyaJ+v3bOvIlLYEeohwQ1q+cQpknjsqBVrkc/SNA=="
+  "resolved" "https://registry.npmjs.org/react-paginate/-/react-paginate-8.1.4.tgz"
+  "version" "8.1.4"
+  dependencies:
+    "prop-types" "^15"
+
 "react-slick@^0.29.0":
   "integrity" "sha512-TGdOKE+ZkJHHeC4aaoH85m8RnFyWqdqRfAGkhd6dirmATXMZWAxOpTLmw2Ll/jPTQ3eEG7ercFr/sbzdeYCJXA=="
   "resolved" "https://registry.npmjs.org/react-slick/-/react-slick-0.29.0.tgz"
@@ -1812,7 +1819,7 @@
   dependencies:
     "clsx" "^1.1.1"
 
-"react@*", "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16.0.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@18.2.0":
+"react@*", "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16 || ^17 || ^18", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16.0.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

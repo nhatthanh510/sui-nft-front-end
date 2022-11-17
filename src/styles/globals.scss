@@ -202,3 +202,20 @@ a {
     }
   }
 }
+
+.pagination {
+  @apply float-right mt-10 flex flex-row items-center gap-4;
+  li {
+    @apply font-bold;
+    &:hover,
+    &.selected {
+      @extend .text-gradient;
+    }
+    &.previous,
+    &.next {
+      &:hover {
+        @apply scale-105 transition-all duration-300 ease-out;
+      }
+    }
+  }
+}

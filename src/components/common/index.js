@@ -9,3 +9,5 @@ export { default as Launchpad } from './Launchpad';
 export { default as Trending } from './Trending';
 export { default as SearchItem } from './SearchItem';
 export { default as CategoryFilter } from './CategoryFilter';
+export { default as Upcoming } from './Upcoming';
+export { default as Pagination } from './Pagination';
