@@ -8,6 +8,7 @@ export default function CollectionInfo() {
     <div className="flex flex-row gap-9 rounded-xl border border-[#dbdbdb] px-16 py-8">
       <div className="shrink-0 grow-0">
         <Image
+          alt=""
           src="/assets/images/collection-detail.jpg"
           width={190}
           height={190}

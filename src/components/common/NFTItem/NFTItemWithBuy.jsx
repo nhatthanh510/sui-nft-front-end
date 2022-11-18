@@ -7,7 +7,6 @@ export default function NFTItem() {
     <div className="inline-block rounded-xl border border-[#9E8AA1]">
       <Link href="">
         <Image
-          alt=""
           src="/assets/images/upcoming.jpg"
           width={300}
           height={297}
@@ -22,7 +21,6 @@ export default function NFTItem() {
         <p className="mt-2">
           <span className="inline-block rounded-md bg-[#323232] px-2 py-1 text-sm">
             <Image
-              alt=""
               src="/assets/images/currency.png"
               height={20}
               width={20}

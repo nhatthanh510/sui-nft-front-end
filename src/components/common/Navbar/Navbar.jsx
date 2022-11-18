@@ -27,12 +27,12 @@ const Navigation = () => {
     <div className="flex flex-row gap-10">
       <ul className="flex flex-row gap-8 pt-1.5">
         <li className="hover:text">
-          <Link href="explore" className="gradient-text">
+          <Link href="/explore" className="gradient-text">
             Explore
           </Link>
         </li>
         <li className="hover:text">
-          <Link href="launchpad" className="gradient-text">
+          <Link href="/launchpad" className="gradient-text">
             Launchpad
           </Link>
         </li>

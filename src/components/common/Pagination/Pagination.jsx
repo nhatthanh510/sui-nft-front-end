@@ -7,8 +7,8 @@ export default function Launchpad() {
   };
   const pageCount = 5;
 
-  const prevArrow = <Image src="/assets/images/left-arrow.png" width={39} height={39} />;
-  const nextArrow = <Image src="/assets/images/right-arrow.png" width={39} height={39} />;
+  const prevArrow = <Image src="/assets/images/left-arrow.png" width={39} height={39} alt="" />;
+  const nextArrow = <Image src="/assets/images/right-arrow.png" width={39} height={39} alt="" />;
 
   return (
     <ReactPaginate
