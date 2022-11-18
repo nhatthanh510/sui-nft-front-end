@@ -13,4 +13,4 @@ export { default as SectionTitle } from './SectionTitle';
 export { default as Pagination } from './Pagination';
 export { default as CountdownItem } from './CountdownItem';
 export { default as CollectionInfo } from './CollectionInfo';
-export { default as NFTItem } from './NFTItem';
+export { NFTItem, NFTItemWithBuy } from './NFTItem';

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { BsSearch } from 'react-icons/bs';
-import { BiBell } from 'react-icons/bi';
+import { BiBell, BiChevronDown } from 'react-icons/bi';
 import useSuiWallet from '@hooks/useSuiWallet';
 import { formatAddress } from '@services/frontend';
 
@@ -25,18 +25,31 @@ const Navigation = () => {
   console.log('suiWallet', suiWallet);
   return (
     <div className="flex flex-row gap-10">
-      <ul className="flex flex-row gap-8 pt-1.5">
-        <li className="hover:text">
-          <Link href="/explore" className="gradient-text">
-            Explore
-          </Link>
-        </li>
-        <li className="hover:text">
-          <Link href="/launchpad" className="gradient-text">
-            Launchpad
-          </Link>
-        </li>
-      </ul>
+      <div className="flex flex-row gap-8 pt-1.5">
+        <Link href="/explore" className="hover:text-yellow-400">
+          Explore
+        </Link>
+        <div className="dropdown">
+          <label
+            tabIndex={0}
+            className="cursor-pointer hover:text-yellow-400 focus:text-yellow-400"
+          >
+            Launchpad <BiChevronDown className="ml-1 inline-block align-top text-2xl" />
+          </label>
+          <ul tabIndex={0} className="dropdown-content menu rounded-2xl bg-[#252525] p-3">
+            <li className="whitespace-nowrap">
+              <Link href="/launchpad" className="hover:text-yellow-400">
+                Launches
+              </Link>
+            </li>
+            <li className="whitespace-nowrap">
+              <Link href="" className="hover:text-yellow-400">
+                Apply to launchpad
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div className="relative flex flex-row gap-7 pl-3">
         <span className="absolute top-2.5 left-0 block h-4 w-0.5 bg-white opacity-60" />
         <Link href="">
@@ -47,7 +60,9 @@ const Navigation = () => {
             Connect Wallet
           </button>
         ) : (
-          <span className="text-sm leading-9">{formatAddress(account)}</span>
+          <span className="rounded-full bg-[#252525] px-4 py-1 text-sm font-bold leading-7 text-white">
+            {formatAddress(account)}
+          </span>
         )}
       </div>
     </div>

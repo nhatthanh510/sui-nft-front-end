@@ -55,7 +55,7 @@ a {
 }
 
 .btn {
-  @apply rounded-full px-6 capitalize text-black transition-transform duration-300 ease-out;
+  @apply rounded-full border-none px-6 capitalize text-black transition-transform duration-300 ease-out;
   background: linear-gradient(258.65deg, #9be3ff 15.72%, #f4b1ea 47.45%, #f8d46b 84.17%);
   transform: scale(1) !important;
   &:hover {
