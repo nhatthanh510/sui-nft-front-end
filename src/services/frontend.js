@@ -1,8 +1,17 @@
-import axios from 'axios';
+export const getCollectionList = async () => {
+  const mockData = [
+    {
+      id: 1,
+      name: 'Collection 1',
+    },
+    {
+      id: 2,
+      name: 'Collection 2',
+    },
+  ];
 
-export const getDummyData = async () => {
-  const res = await axios.get(`https://jsonplaceholder.typicode.com/todos/1`);
-  return res.data;
+  const data = await new Promise((resolve) => setTimeout(() => resolve(mockData), 500));
+  return data;
 };
 
 export const formatAddress = (address) => {

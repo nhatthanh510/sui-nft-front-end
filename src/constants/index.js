@@ -1,0 +1,3 @@
+export const QUERY_KEY = {
+  COLLECTION_LIST: 'COLLECTION_LIST',
+};

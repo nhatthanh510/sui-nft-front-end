@@ -1,11 +1,11 @@
 import { SearchItem, CategoryFilter, ListCollection } from '@components/common/';
 
-export default function Home() {
+export default function ExplorePage({ collections }) {
   return (
     <div className="mt-28">
       <SearchItem />
       <CategoryFilter />
-      <ListCollection />
+      <ListCollection data={collections} />
     </div>
   );
 }
