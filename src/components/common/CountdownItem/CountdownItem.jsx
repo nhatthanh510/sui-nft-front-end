@@ -8,7 +8,10 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     return null;
   } else {
     return (
-      <span className="flex flex-row items-center gap-2 text-sm font-medium text-white">
+      <span
+        className="flex flex-row items-center gap-2 text-sm font-medium text-white"
+        suppressHydrationWarning
+      >
         <FiClock className="text-xl" />
         {days ? days + 'd' : ''} {hours ? hours + 'h' : ''} {minutes ? minutes + 'm' : ''}{' '}
         {seconds ? seconds + 's' : '0s'}
