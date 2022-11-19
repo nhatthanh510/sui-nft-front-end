@@ -5,7 +5,7 @@ import { FaDiscord, FaTelegramPlane } from 'react-icons/fa';
 
 export default function CollectionInfo() {
   return (
-    <div className="flex flex-row gap-9 rounded-xl border border-[#dbdbdb] px-16 py-8">
+    <div className="flex flex-row gap-9 rounded-xl border border-[#dbdbdb] bg-[#030303] px-16 py-8">
       <div className="shrink-0 grow-0">
         <Image
           alt=""

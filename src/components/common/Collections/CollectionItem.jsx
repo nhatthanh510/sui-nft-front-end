@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function CollectionItem({ collection }) {
   return (
     <div className="collection">
-      <Link href={`/collection/${collection.id}`} className="group relative">
+      <Link href={`/collection/${collection?.id}`} className="group relative">
         <div className="relative z-10 grid grid-cols-2 border border-white p-9">
           <Image
             src="/assets/images/collection.jpg"
