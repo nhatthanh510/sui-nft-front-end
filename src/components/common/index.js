@@ -16,5 +16,6 @@ export { default as CollectionInfo } from './CollectionInfo';
 export { default as MyItemInfo } from './MyItemInfo';
 export { default as Sort } from './Sort';
 export { default as SideCart } from './SideCart';
-export { NFTItem, NFTItemWithBuy } from './NFTItem';
+export { NFTItem, NFTItemWithBuy, NFTItemWithSell } from './NFTItem';
 export { default as NFTDetail } from './NFTDetail';
+export { default as MyWallet } from './MyWallet';

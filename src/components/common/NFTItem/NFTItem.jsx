@@ -4,14 +4,14 @@ import { CountdownItem } from '@components/common';
 
 export default function NFTItem() {
   return (
-    <div className="inline-block rounded-xl border border-[#9E8AA1]">
+    <div className="inline-block rounded-2xl border border-[#9E8AA1]">
       <Link href="">
         <Image
           alt=""
           src="/assets/images/upcoming.jpg"
           width={300}
           height={297}
-          className="w-full rounded-xl"
+          className="w-full rounded-2xl"
         />
       </Link>
       <div className="p-4">

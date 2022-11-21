@@ -1,9 +1,10 @@
-import { CollectionInfo } from '@components/common';
+import { MyItemInfo, MyWallet } from '@components/common';
 
 export default function LaunchpadPage() {
   return (
     <div className="mt-28">
-      <CollectionInfo />
+      <MyItemInfo />
+      <MyWallet />
     </div>
   );
 }

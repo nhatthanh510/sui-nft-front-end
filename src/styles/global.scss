@@ -61,6 +61,9 @@ a {
     animation: gradient 3s ease infinite;
     transform: scale(1.05) !important;
   }
+  &.btn-error {
+    background: #ff6363;
+  }
 }
 
 .gradient-box {
