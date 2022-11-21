@@ -6,31 +6,14 @@ import '../styles/global.scss';
 import '../styles/slick.scss';
 import { ToastContainer } from 'react-toastify';
 import Layout from '@components/common/Layout';
-import localFont from '@next/font/local';
-
-const josh = localFont({
-  src: [
-    {
-      path: '../styles/fonts/Jost.woff2',
-      style: 'normal',
-    },
-    {
-      path: '../styles/fonts/Jost-Italic.woff2',
-      style: 'italic',
-    },
-  ],
-});
+import { josh, reactQueryConfig, nProgressConfig, toastConfig } from '@config/app.config';
 
 function MyApp({ Component, pageProps }) {
   const [queryClient] = useState(
     () =>
       new QueryClient({
         defaultOptions: {
-          queries: {
-            staleTime: 24 * 1000 * 3600,
-            refetchOnWindowFocus: false,
-            retry: false,
-          },
+          queries: reactQueryConfig,
         },
       })
   );
@@ -40,16 +23,11 @@ function MyApp({ Component, pageProps }) {
       <ReactQueryDevtools initialIsOpen={false} />
       <Hydrate state={pageProps.dehydratedState}>
         <Layout>
-          <NextNProgress color="#29D" startPosition={0.3} height={5} showOnShallow={false} />
+          <NextNProgress {...nProgressConfig} />
           <main className={josh.className}>
             <Component {...pageProps} />
           </main>
-          <ToastContainer
-            position="bottom-right"
-            hideProgressBar={true}
-            autoClose={3000}
-            closeOnClick
-          />
+          <ToastContainer {...toastConfig} />
         </Layout>
       </Hydrate>
     </QueryClientProvider>
