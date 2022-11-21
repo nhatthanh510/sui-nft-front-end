@@ -13,6 +13,7 @@ export { default as SectionTitle } from './SectionTitle';
 export { default as Pagination } from './Pagination';
 export { default as CountdownItem } from './CountdownItem';
 export { default as CollectionInfo } from './CollectionInfo';
+export { default as MyItemInfo } from './MyItemInfo';
 export { default as Sort } from './Sort';
 export { default as SideCart } from './SideCart';
 export { NFTItem, NFTItemWithBuy } from './NFTItem';
