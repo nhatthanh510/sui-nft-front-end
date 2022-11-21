@@ -26,21 +26,21 @@ const Navigation = () => {
   return (
     <div className="flex flex-row gap-10">
       <div className="flex flex-row gap-8 pt-1.5">
-        <Link href="/explore" className="hover:text-[#F5D26D]">
+        <Link href="/explore" className="hover:text-secondary">
           Explore
         </Link>
         <div className="dropdown">
-          <label tabIndex={0} className="cursor-pointer hover:text-[#F5D26D] focus:text-[#F5D26D]">
+          <label tabIndex={0} className="cursor-pointer hover:text-secondary focus:text-secondary">
             Launchpad <BiChevronDown className="ml-1 inline-block align-top text-2xl" />
           </label>
           <ul tabIndex={0} className="dropdown-content menu rounded-2xl bg-[#252525] p-3">
             <li className="whitespace-nowrap">
-              <Link href="/launchpad" className="hover:text-[#F5D26D]">
+              <Link href="/launchpad" className="hover:text-secondary">
                 Launches
               </Link>
             </li>
             <li className="whitespace-nowrap">
-              <Link href="" className="hover:text-[#F5D26D]">
+              <Link href="" className="hover:text-secondary">
                 Apply to launchpad
               </Link>
             </li>
@@ -69,7 +69,7 @@ const Navigation = () => {
               <li>
                 <Link
                   href=""
-                  className="px-4 py-1.5 text-center text-sm font-bold text-white hover:text-[#f5d26d]"
+                  className="px-4 py-1.5 text-center text-sm font-bold text-white hover:text-secondary"
                 >
                   My Profile
                 </Link>
@@ -77,13 +77,13 @@ const Navigation = () => {
               <li>
                 <Link
                   href=""
-                  className="px-4 py-1.5 text-center text-sm font-bold text-white hover:text-[#f5d26d]"
+                  className="px-4 py-1.5 text-center text-sm font-bold text-white hover:text-secondary"
                 >
                   My NFT
                 </Link>
               </li>
               <li>
-                <button className="px-4 py-1.5 text-center text-sm font-bold text-white hover:text-[#f5d26d]">
+                <button className="px-4 py-1.5 text-center text-sm font-bold text-white hover:text-secondary">
                   Log out
                 </button>
               </li>

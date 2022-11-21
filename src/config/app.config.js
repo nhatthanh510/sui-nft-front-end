@@ -11,6 +11,7 @@ export const josh = localFont({
       style: 'italic',
     },
   ],
+  preload: true,
 });
 
 export const reactQueryConfig = {

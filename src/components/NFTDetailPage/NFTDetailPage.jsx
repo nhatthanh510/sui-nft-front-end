@@ -1,10 +1,11 @@
-import { Launchpad, Upcoming } from '@components/common';
+import { Category } from '@components/common';
+import { NFTDetail } from '@components/common';
 
 export default function LaunchpadPage() {
   return (
     <div className="mt-28">
-      <Launchpad />
-      <Upcoming />
+      <NFTDetail />
+      <Category />
     </div>
   );
 }
