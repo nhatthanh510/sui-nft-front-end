@@ -13,6 +13,7 @@ export default function Trending() {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 300,
+    focusOnSelect: true,
   };
   return (
     <div className="mt-18">
